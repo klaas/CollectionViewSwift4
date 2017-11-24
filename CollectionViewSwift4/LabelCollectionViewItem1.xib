@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LabelCollectionViewItem1" customModule="CollectionViewSwift4" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="LabelCollectionViewItemView" customModule="CollectionViewSwift4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-ZI-kF6">
+                    <rect key="frame" x="0.0" y="0.0" width="273" height="173"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="173" id="E3e-1e-ThM"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" drawsBackground="YES" id="mA2-QF-Y8u">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.82358241081237793" green="0.95688337087631226" blue="0.8271757960319519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="n0N-Od-tLB" name="value" keyPath="representedObject.title" id="b9t-qz-Dxa"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="MTJ-ZI-kF6" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="a73-tR-AOI"/>
+                <constraint firstItem="MTJ-ZI-kF6" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="oCR-01-OjF"/>
+                <constraint firstAttribute="trailing" secondItem="MTJ-ZI-kF6" secondAttribute="trailing" id="wVt-Iu-YLf"/>
+            </constraints>
+            <point key="canvasLocation" x="27.5" y="118.5"/>
+        </customView>
+        <customObject id="n0N-Od-tLB" customClass="LabelCollectionViewItem1" customModule="CollectionViewSwift4" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="MTJ-ZI-kF6" id="OXh-gz-agK"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="fkf-md-esR"/>
+            </connections>
+        </customObject>
+        <userDefaultsController representsSharedInstance="YES" id="9tZ-cY-sjP"/>
+    </objects>
+</document>
